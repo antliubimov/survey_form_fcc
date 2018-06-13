@@ -37,7 +37,10 @@ form {
 
 .flex {
     display: flex;
-    justify-content: space-between;
+}
+
+.flex-child {
+    flex: 1;
 }
 
 input[type=submit] {

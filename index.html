@@ -17,29 +17,35 @@
             Let us know how we can improve freeCodeCamp
         </p>
         <form action="#" id="survey-form" method="GET">
+
             <div class="flex">
-                <div>
-                    <label for="name" id="name-label">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
-                </div>
-                <div>
-                    <label for="email" id="email-label">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                </div>
-                <div>
-                    <label for="age" id="number-label">Age</label>
-                    <input type="number" name="age" id="age" min="0" placeholder="Your Age" required>
-                </div>
-                <div>
+                <label for="name" id="name-label">Name:</label>
+                <label for="email" id="email-label">Email:</label>
+            </div>
+            <div class="flex">
+                <input class="flex-child" type="text" name="name" id="name" placeholder="Enter your name" required>
+                <input class="flex-child" type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="flex">
+                <label class="flex-child" for="age" id="number-label">Age:</label>
+                <label class="flex-child">Sex:</label>
+            </div>
+
+            <div class="flex">
+                <input class="flex-child" type="number" name="age" id="age" min="0" placeholder="Your Age" required>
+                <div class="flex-child">
                     <input type="radio" name="sex" id="male">
                     <label for="male">Male</label>
                     <input type="radio" name="sex" id="female">
                     <label for="female">Female</label>
                 </div>
             </div>
-            <div>
-                <label for="role">Which option best describes your current role</label>
-                <select name="role" id="role">
+
+            <div class="flex">
+                <label class="flex-child" for="role">Which option best describes your current role:</label>
+                <select clas="flex-child" name="role" id="role">
+                    <option disabled value>Select an option</option>
                     <option value="student">Student</option>
                     <option value="">Full Time Job</option>
                     <option value="">Full Time Learner</option>
@@ -48,17 +54,20 @@
                 </select>
             </div>
             <div>
-                <p for="">How likely is that you would recommend freeCodeCamp to a friend</p>
-                <input type="radio" name="recommend" id="radio-definitely">
-                <label for="radio-definitely">Definitely</label>
-                <input type="radio" name="recommend" id="radio-maybe">
-                <label for="radio-maybe">Maybe</label>
-                <input type="radio" name="recommend" id="radio-notsure">
-                <label for="radio-notsure">Not sure</label>
+                <p for="">How likely is that you would recommend freeCodeCamp to a friend:</p>
+                <div class="flex flex--like">
+                    <input type="radio" name="recommend" id="radio-definitely">
+                    <label for="radio-definitely">Definitely</label>
+                    <input type="radio" name="recommend" id="radio-maybe">
+                    <label for="radio-maybe">Maybe</label>
+                    <input type="radio" name="recommend" id="radio-notsure">
+                    <label for="radio-notsure">Not sure</label>
+                </div>
             </div>
-            <div>
-                <label for="like">What do you like most in FCC</label>
-                <select name="like" id="">
+            <div class="flex">
+                <label class="flex-child" for="like">What do you like most in FCC:</label>
+                <select class="flex-child" name="like" id="like">
+                    <option disabled value>Select an option</option>
                     <option value="challenges">Challenges</option>
                     <option value="projects">Project</option>
                     <option value="community">Community</option>
@@ -67,28 +76,30 @@
             </div>
             <div>
                 <p>Things that should be improved in the future (Check all that apply)</p>
-                <input type="checkbox" name="" id="">
-                <label for="">Front-end Projects</label>
-                <input type="checkbox" name="" id="">
-                <label for="">Back-end Projects</label>
-                <input type="checkbox" name="" id="">
-                <label for="">Data Visualization</label>
-                <input type="checkbox" name="" id="">
-                <label for="">Challenges</label>
-                <input type="checkbox" name="" id="">
-                <label for="">Open Source Community</label>
-                <input type="checkbox" name="" id="">
-                <label for="">Gitter help rooms</label>
-                <input type="checkbox" name="" id="">
-                <label for="">Videos</label>
-                <input type="checkbox" name="" id="">
-                <label for="">City Meetups</label>
-                <input type="checkbox" name="" id="">
-                <label for="">Wiki</label>
-                <input type="checkbox" name="" id="">
-                <label for="">Forum</label>
-                <input type="checkbox" name="" id="">
-                <label for="">Additional Courses</label>
+                <div>
+                    <input type="checkbox" name="improve" id="frontend">
+                    <label for="frontend">Front-end Projects</label>
+                    <input type="checkbox" name="improve" id="backend">
+                    <label for="backend">Back-end Projects</label>
+                    <input type="checkbox" name="improve" id="data_visual">
+                    <label for="data_visual">Data Visualization</label>
+                    <input type="checkbox" name="improve" id="challenges">
+                    <label for="challenges">Challenges</label>
+                    <input type="checkbox" name="improve" id="open_source">
+                    <label for="open_source">Open Source Community</label>
+                    <input type="checkbox" name="improve" id="gitter">
+                    <label for="gitter">Gitter help rooms</label>
+                    <input type="checkbox" name="improve" id="videos">
+                    <label for="videos">Videos</label>
+                    <input type="checkbox" name="improve" id="meetup">
+                    <label for="meetup">City Meetups</label>
+                    <input type="checkbox" name="improve" id="wiki">
+                    <label for="wiki">Wiki</label>
+                    <input type="checkbox" name="improve" id="forum">
+                    <label for="forum">Forum</label>
+                    <input type="checkbox" name="improve" id="courses">
+                    <label for="courses">Additional Courses</label>
+                </div>
             </div>
             <div>
                 <label for="comments">Any Comments or Suggestions</label>
