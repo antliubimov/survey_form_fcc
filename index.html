@@ -20,12 +20,20 @@
 
             <div>
                 <div class="flex">
-                    <label class="flex-child labels" for="name" id="name-label">Name:</label>
-                    <label class="flex-child labels" for="email" id="email-label">Email:</label>
+                    <div class="flex-child">
+                        <label class="labels" for="name" id="name-label">Name:</label>
+                    </div>
+                    <div class="flex-child">
+                        <label class="labels" for="email" id="email-label">Email:</label>
+                    </div>
                 </div>
                 <div class="flex">
-                    <input class="flex-child" type="text" name="name" id="name" placeholder="Enter your name" required>
-                    <input class="flex-child" type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <div class="flex-child">
+                        <input class="enter" type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="flex-child">
+                        <input class="enter" type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
                 </div>
             </div>
 
@@ -36,26 +44,34 @@
                 </div>
 
                 <div class="flex">
-                    <input class="flex-child" type="number" name="age" id="age" min="0" max="120" placeholder="Your Age" required>
                     <div class="flex-child">
-                        <input type="radio" name="sex" id="male">
-                        <label for="male">Male</label>
-                        <input type="radio" name="sex" id="female">
-                        <label for="female">Female</label>
+                        <input class="enter" type="number" name="age" id="age" min="0" max="120" placeholder="Your Age" required>
+                    </div>
+                    <div class="flex-child">
+                        <div class="enter">
+                            <input type="radio" name="sex" id="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="sex" id="female">
+                            <label for="female">Female</label>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="flex">
-                <label class="flex-child labels" for="role">Which option best describes your current role:</label>
-                <select class="flex-child" name="role" id="role">
-                    <option disabled value>Select an option</option>
-                    <option value="student">Student</option>
-                    <option value="full_time_job">Full Time Job</option>
-                    <option value="full_time_learn">Full Time Learner</option>
-                    <option value="not_say">Prefer not to say</option>
-                    <option value="other">Other</option>
-                </select>
+                <div class="flex-child">
+                    <label class="enter labels" for="role">Which option best describes your current role:</label>
+                </div>
+                <div class="flex-child">
+                    <select class="enter" name="role" id="role">
+                        <option disabled value>Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="full_time_learn">Full Time Learner</option>
+                        <option value="full_time_job">Full Time Job</option>
+                        <option value="other">Other</option>
+                        <option value="not_say">Prefer not to say</option>
+                    </select>
+                </div>
             </div>
             <div>
                 <p class="labels">How likely is that you would recommend freeCodeCamp to a friend:</p>
@@ -69,18 +85,23 @@
                 </div>
             </div>
             <div class="flex">
-                <label class="flex-child labels" for="like">What do you like most in FCC:</label>
-                <select class="flex-child" name="like" id="like">
-                    <option disabled value>Select an option</option>
-                    <option value="challenges">Challenges</option>
-                    <option value="projects">Project</option>
-                    <option value="community">Community</option>
-                    <option value="open-source">Open Source</option>
-                </select>
+                <div class="flex-child">
+                    <label class="enter labels" for="like">What do you like most in FCC:</label>
+                </div>
+                <div class="flex-child">
+                    <select class="enter" name="like" id="like">
+                        <option value="challenges">Challenges</option>
+                        <option disabled value>Select an option</option>
+                        <option value="community">Community</option>
+                        <option value="projects">Project</option>
+                        <option value="open-source">Open Source</option>
+                    </select>
+                </div>
+
             </div>
             <div>
                 <p class="labels">Things that should be improved in the future (Check all that apply)</p>
-                <div>
+                <div class="enter">
                     <input type="checkbox" name="improve" id="frontend">
                     <label for="frontend">Front-end Projects</label>
                     <input type="checkbox" name="improve" id="backend">
@@ -106,7 +127,7 @@
                 </div>
             </div>
             <div>
-                <label class="labels" for="comments">Any Comments or Suggestions</label>
+                <label class="labels" for="comments">Any Comments or Suggestions:</label>
                 <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
             </div>
             <input type="submit" value="Submit">
