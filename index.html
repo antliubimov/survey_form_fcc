@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Surver Form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -48,13 +48,13 @@
                     <div class="flex-child">
                         <input class="enter" type="number" name="age" id="age" min="0" max="120" placeholder="Your Age" required>
                     </div>
-                    <!-- TODO: img  вместо radio-->
+
                     <div class="flex-child">
                         <div class="enter">
                             <input type="radio" name="sex" id="male">
-                            <label for="male">Male</label>
+                            <label class="male-icon" for="male">Male</label>
                             <input type="radio" name="sex" id="female">
-                            <label for="female">Female</label>
+                            <label class="female-icon" for="female">Female</label>
                         </div>
                     </div>
                 </div>
@@ -79,13 +79,13 @@
             <div>
                 <p class="labels">How likely is that you would recommend freeCodeCamp to a friend:</p>
                 <div class="flex flex--like">
-                    <!-- TODO: выровнять space-between -->
+
                     <input type="radio" name="recommend" id="radio-definitely">
-                    <label for="radio-definitely">Definitely</label>
+                    <label for="radio-definitely" class="recomm">Definitely</label>
                     <input type="radio" name="recommend" id="radio-maybe">
-                    <label for="radio-maybe">Maybe</label>
+                    <label for="radio-maybe" class="recomm">Maybe</label>
                     <input type="radio" name="recommend" id="radio-notsure">
-                    <label for="radio-notsure">Not sure</label>
+                    <label for="radio-notsure" class="recomm">Not sure</label>
                 </div>
             </div>
             <!-- Like -->
@@ -136,8 +136,9 @@
             <!-- Comments -->
             <div>
                 <label class="labels" for="comments">Any Comments or Suggestions:</label>
-                <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
             </div>
+            <!-- Submit -->
             <input type="submit" value="Submit">
         </form>
     </div>

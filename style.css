@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Sunflower:300');
-
-/* 
-font-family: 'Roboto', sans-serif;
-font-family: 'Sunflower', sans-serif;
-*/
-
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
 body {
     background-color: #e9eef1;
     font-family: 'Roboto', sans-serif;
@@ -55,6 +50,63 @@ form>div {
     min-width: 85%;
     padding: 5px;
 }
+
+
+/* About yourself */
+
+.male-icon {
+    margin-right: 15px;
+}
+
+.male-icon::before,
+.female-icon::before {
+    font-family: "FontAwesome";
+    font-size: 18px;
+    padding-right: 5px;
+    color: #96d1f3;
+}
+
+.male-icon::before {
+    content: "\f183";
+}
+
+.female-icon::before {
+    content: "\f182";
+}
+
+input[type="radio"]:checked+.male-icon::before,
+input[type="radio"]:checked+.female-icon::before {
+    color: #0089fd;
+}
+
+
+/********* Recommend ********/
+
+.flex--like {
+    justify-content: space-around;
+}
+
+input[type="radio"] {
+    opacity: 0;
+}
+
+.recomm::before {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 5px;
+    border: 2px solid #96d1f3;
+    border-radius: 50%;
+    content: "";
+}
+
+input[type="radio"]:checked+.recomm::before {
+    border: 2px solid #0089fd;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/********* Submit *********/
 
 input[type=submit] {
     width: 105px;
