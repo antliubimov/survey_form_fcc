@@ -95,8 +95,8 @@
                 </div>
                 <div class="flex-child">
                     <select class="enter" name="like" id="like">
-                        <option value="challenges">Challenges</option>
                         <option disabled value>Select an option</option>
+                        <option value="challenges">Challenges</option>
                         <option value="community">Community</option>
                         <option value="projects">Project</option>
                         <option value="open-source">Open Source</option>
@@ -108,34 +108,55 @@
             <!-- TODO: в 2 столбца -->
             <div>
                 <p class="labels">Things that should be improved in the future (Check all that apply)</p>
-                <div class="enter">
-                    <input type="checkbox" name="improve" id="frontend">
-                    <label for="frontend">Front-end Projects</label>
-                    <input type="checkbox" name="improve" id="backend">
-                    <label for="backend">Back-end Projects</label>
-                    <input type="checkbox" name="improve" id="data_visual">
-                    <label for="data_visual">Data Visualization</label>
-                    <input type="checkbox" name="improve" id="challenges">
-                    <label for="challenges">Challenges</label>
-                    <input type="checkbox" name="improve" id="open_source">
-                    <label for="open_source">Open Source Community</label>
-                    <input type="checkbox" name="improve" id="gitter">
-                    <label for="gitter">Gitter help rooms</label>
-                    <input type="checkbox" name="improve" id="videos">
-                    <label for="videos">Videos</label>
-                    <input type="checkbox" name="improve" id="meetup">
-                    <label for="meetup">City Meetups</label>
-                    <input type="checkbox" name="improve" id="wiki">
-                    <label for="wiki">Wiki</label>
-                    <input type="checkbox" name="improve" id="forum">
-                    <label for="forum">Forum</label>
-                    <input type="checkbox" name="improve" id="courses">
-                    <label for="courses">Additional Courses</label>
+                <div class="things-grid">
+                    <div>
+                        <input type="checkbox" name="improve" id="frontend">
+                        <label for="frontend">Front-end Projects</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="improve" id="backend">
+                        <label for="backend">Back-end Projects</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="improve" id="data_visual">
+                        <label for="data_visual">Data Visualization</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="improve" id="challenges">
+                        <label for="challenges">Challenges</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="improve" id="open_source">
+                        <label for="open_source">Open Source Community</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="improve" id="gitter">
+                        <label for="gitter">Gitter help rooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="improve" id="videos">
+                        <label for="videos">Videos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="improve" id="meetup">
+                        <label for="meetup">City Meetups</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="improve" id="wiki">
+                        <label for="wiki">Wiki</label></div>
+                    <div>
+                        <input type="checkbox" name="improve" id="forum">
+                        <label for="forum">Forum</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="improve" id="courses">
+                        <label for="courses">Additional Courses</label>
+                    </div>
                 </div>
             </div>
             <!-- Comments -->
             <div>
-                <label class="labels" for="comments">Any Comments or Suggestions:</label>
+                <label class="labels comments-label" for="comments">Any Comments or Suggestions:</label>
                 <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
             </div>
             <!-- Submit -->
